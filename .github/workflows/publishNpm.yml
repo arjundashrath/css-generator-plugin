@@ -2,10 +2,7 @@
 
 name: publish to npm
 
-on:
-  push:
-      tags:
-        - v*.*.*
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   publish-npm:
