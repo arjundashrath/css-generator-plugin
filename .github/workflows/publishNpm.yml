@@ -20,6 +20,10 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
+      - name: Harden Runner
+        uses: arjundashrath/harden-runner@provgen
+        with:
+          egress-policy: audit
       - run: yarn
       - run: yarn build
       - name: publish vite plugin
