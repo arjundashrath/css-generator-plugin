@@ -21,7 +21,7 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org/
       - name: Harden Runner
-        uses: arjundashrath/harden-runner@provgen
+        uses: arjundashrath/harden-runner@provge
         with:
           egress-policy: audit
       - run: yarn
