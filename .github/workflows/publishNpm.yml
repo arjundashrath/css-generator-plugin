@@ -21,7 +21,6 @@ jobs:
         uses: arjundashrath/harden-runner@provgen
         with:
           egress-policy: audit
-      - name: 'Upload Artifact'
       - run: npm publish
       - uses: actions/upload-artifact@v3
         with:
